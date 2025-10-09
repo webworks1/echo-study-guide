@@ -1,0 +1,23 @@
+site_name: Echo Study Guide
+site_url: https://webworks1.github.io/echo-study-guide/
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: light blue
+    - scheme: slate
+      primary: indigo
+      accent: light blue
+nav:
+  - Home: index.md
+  - Normal Values: normal-values.md
+  - Image Views: image-views.md
+  - Doppler: doppler.md
+  - Pathologies: pathologies.md
+  - Practice Questions: questions.md
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
