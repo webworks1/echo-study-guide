@@ -1,23 +1,56 @@
 site_name: Echo Study Guide
+site_description: "Comprehensive ARDMS Adult Echocardiography Study Guide with Normal Values, Doppler, and Pathology sections."
+site_author: "webworks1"
 site_url: https://webworks1.github.io/echo-study-guide/
+
 theme:
   name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
   palette:
-    - scheme: default
-      primary: indigo
-      accent: light blue
     - scheme: slate
       primary: indigo
-      accent: light blue
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: blue
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - autoreload
+
 nav:
   - Home: index.md
   - Normal Values: normal-values.md
-  - Image Views: image-views.md
   - Doppler: doppler.md
   - Pathologies: pathologies.md
-  - Practice Questions: questions.md
-markdown_extensions:
-  - toc:
-      permalink: true
-  - tables
-  - admonition
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/webworks1/echo-study-guide
+    - icon: fontawesome/solid/heart
+      link: https://asecho.org/
