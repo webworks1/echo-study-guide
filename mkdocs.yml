@@ -4,9 +4,3 @@ nav:
       - Normal Values: beginner/normal-values.md
       - Doppler: beginner/doppler.md
       - Pathologies: beginner/pathologies.md
-  - Intermediate:
-      - Formulas & Calculations: intermediate/formulas.md
-      - Exam Prep: intermediate/exam-prep.md
-  - Advanced:
-      - Case 1 – Dilated Cardiomyopathy: advanced/case01.md
-      - RV Function: advanced/rv-function.md
