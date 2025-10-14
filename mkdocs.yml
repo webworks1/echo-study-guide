@@ -1,6 +1,30 @@
+site_name: Echo Study Guide
+site_description: "Comprehensive ARDMS Adult Echocardiography Study Guide"
+site_url: https://YOURUSERNAME.github.io/echo-study-guide/
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.instant
+    - navigation.expand
+    - content.code.copy
+    - toc.integrate
+
 nav:
   - Beginner:
-      - Home: beginner/index.md
+      - Overview: beginner/index.md
       - Normal Values: beginner/normal-values.md
       - Doppler: beginner/doppler.md
       - Pathologies: beginner/pathologies.md
+
+  - Intermediate:
+      - Overview: intermediate/index.md
+      - Advanced Doppler: intermediate/advanced-doppler.md
+      - Chamber Quantification: intermediate/chamber-quantification.md
+      - Pathology Correlation: intermediate/pathology-correlation.md
+
+  - Advanced:
+      - Overview: advanced/index.md
+      - Stress Echo: advanced/stress-echo.md
+      - Congenital Heart Disease: advanced/congenital.md
+      - Board Review: advanced/board-review.md
