@@ -1,45 +1,53 @@
 site_name: Echo Study Guide
-site_description: "Comprehensive ARDMS Adult Echocardiography Study Guide"
+site_description: "Comprehensive ARDMS Adult Echocardiography Study Guide with Normal Values, Doppler, and Pathology sections."
 site_author: "webworks1"
-site_url: https://YOURUSERNAME.github.io/echo-study-guide/
+site_url: https://webworks1.github.io/echo-study-guide/
 
 theme:
   name: material
+  language: en
   features:
-    - navigation.sections
-    - navigation.expand
     - navigation.instant
-    - content.code.copy
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
     - toc.integrate
+    - content.code.copy
   palette:
     - scheme: default
       primary: blue
-      accent: cyan
-  font:
-    text: Roboto
-    code: Roboto Mono
-
-# Optional but helps with search and structure
-plugins:
-  - search
-  - tags
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 markdown_extensions:
   - admonition
-  - footnotes
-  - tables
+  - attr_list
   - toc:
       permalink: true
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed
-  - pymdownx.highlight
-  - pymdownx.emoji
+  - tables
+  - footnotes
+  - codehilite
+
+plugins:
+  - search
 
 nav:
   - Home: index.md
   - Beginner:
-      - Overview: beginner/index.md
-      - Normal Values: beginner/normal-values.md
-      - Doppler: beginner/doppler.md
-      - Pathologies: beginner/pathologies.md
+      - Normal Values: normal-values.md
+      - Doppler: doppler.md
+      - Pathologies: pathologies.md
+  - Intermediate:
+      - Overview: intermediate/index.md
+      - Advanced Doppler: intermediate/advanced-doppler.md
+      - Pathology Cases: intermediate/pathology-cases.md
+      - Formulas: intermediate/formulas.md
