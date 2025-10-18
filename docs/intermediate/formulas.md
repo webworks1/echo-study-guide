@@ -17,5 +17,6 @@ RAP by IVC size/collapse per ASE Right-Heart 2025.
 
 ---
 
-## Diastology Toolkit (Inputs used in 2025 Algorithm)
+## <!-- rebuild -->
+Diastology Toolkit (Inputs used in 2025 Algorithm)
 E/A, DT, e′(septal + lateral), avg E/e′, LAVI, TRV → integrated to classify diastolic function & filling pressures.
