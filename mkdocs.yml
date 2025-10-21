@@ -2,6 +2,7 @@ site_name: Echo Study Guide
 site_description: "Comprehensive ARDMS Adult Echocardiography Study Guide with Normal Values, Doppler, and Pathology sections."
 site_author: "webworks1"
 site_url: https://webworks1.github.io/echo-study-guide/
+docs_dir: docs
 
 theme:
   name: material
@@ -39,6 +40,10 @@ markdown_extensions:
 
 plugins:
   - search
+
+validation:
+  nav:
+    omitted_files: warn
 
 nav:
   - Home: index.md
