@@ -3,10 +3,10 @@ name: deploy-mkdocs
 on:
   push:
     branches:
-      - main  # Deploy whenever you push to main
+      - main
 
 permissions:
-  contents: write  # Required for pushing to gh-pages
+  contents: write
 
 jobs:
   build:
@@ -21,16 +21,9 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install MkDocs and dependencies
+      - name: Install dependencies
         run: |
-          pip install mkdocs-material mkdocs-awesome-pages-plugin mkdocs-git-revision-date-localized-plugin
+          pip install mkdocs-material
 
-      - name: Force clean build (ignore cache)
-        run: mkdocs build --clean
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
-          force_orphan: true
+      - name: Build and Deploy
+        run: mkdocs gh-deploy --force --clean
