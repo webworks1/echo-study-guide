@@ -1,7 +1,9 @@
 site_name: Echo Study Guide
-site_description: "Comprehensive ARDMS Adult Echocardiography Study Guide with Normal Values, Doppler, and Pathology sections."
+site_description: "Comprehensive ARDMS Adult Echocardiography Study Guide — built from the latest ASE and IAC 2025 guidelines."
 site_author: "webworks1"
-site_url: https://webworks1.github.io/echo-study-guide/
+site_url: "https://webworks1.github.io/echo-study-guide/"
+
+use_directory_urls: false
 
 theme:
   name: material
@@ -43,6 +45,7 @@ plugins:
 nav:
   - Home: index.md
   - Beginner:
+      - Overview: beginner/index.md
       - Normal Values: beginner/normal-values.md
       - Doppler: beginner/doppler.md
       - Pathologies: beginner/pathologies.md
@@ -51,3 +54,4 @@ nav:
       - Advanced Doppler: intermediate/advanced-doppler.md
       - Pathology Cases: intermediate/pathology-cases.md
       - Formulas: intermediate/formulas.md
+  - "Hidden – force intermediate": intermediate/index.md
