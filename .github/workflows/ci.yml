@@ -3,10 +3,10 @@ name: deploy-mkdocs
 on:
   push:
     branches:
-      - main
+      - main  # Deploy on every push to main
 
 permissions:
-  contents: write
+  contents: write  # Required to push to gh-pages
 
 jobs:
   build:
@@ -25,6 +25,8 @@ jobs:
         run: |
           pip install mkdocs-material
 
-      - name: Build site and deploy to gh-pages
+      - name: Clean old build and redeploy
         run: |
+          rm -rf site
+          mkdocs build --clean --verbose
           mkdocs gh-deploy --force --clean
