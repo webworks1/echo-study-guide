@@ -3,10 +3,10 @@ name: deploy-mkdocs
 on:
   push:
     branches:
-      - main  # Deploy on every push to main
+      - main  # Deploy whenever changes are pushed to main
 
 permissions:
-  contents: write  # Required to push to gh-pages
+  contents: write  # Needed to push to gh-pages
 
 jobs:
   build:
