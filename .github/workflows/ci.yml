@@ -25,8 +25,14 @@ jobs:
         run: |
           pip install mkdocs-material
 
-      - name: Clean old build and redeploy
+      - name: Build site
         run: |
-          rm -rf site
           mkdocs build --clean --verbose
-          mkdocs gh-deploy --force --clean
+
+      - name: Deploy to GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          mkdocs gh-deploy --force --clean --remote-name origin --remote-branch gh-pages
