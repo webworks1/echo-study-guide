@@ -42,16 +42,19 @@ plugins:
   - search
 
 nav:
-  - Home: index.md
-  - Beginner:
-      - Overview: beginner/index.md
-      - Normal Values: beginner/normal-values.md
-      - Doppler: beginner/doppler.md
-      - Pathologies: beginner/pathologies.md
-  - Intermediate:
-      - Overview: intermediate/index.md
-      - Advanced Doppler: intermediate/advanced-doppler.md
-      - Pathology Cases: intermediate/pathology-cases.md
-      - Formulas: intermediate/formulas.md
-  - Advanced:
-      - Overview:
+  - Home: study-guide/index.md
+  - Study Guide:
+      - Beginner:
+          - Overview: study-guide/beginner/index.md
+          - Normal Values: study-guide/beginner/normal-values.md
+          - Doppler: study-guide/beginner/doppler.md
+          - Pathologies: study-guide/beginner/pathologies.md
+      - Intermediate:
+          - Overview: study-guide/intermediate/index.md
+          - Advanced Doppler: study-guide/intermediate/advanced-doppler.md
+          - Pathology Cases: study-guide/intermediate/pathology-cases.md
+          - Formulas: study-guide/intermediate/formulas.md
+      - Advanced:
+          - Overview: study-guide/advanced/index.md
+          - Strain Imaging: study-guide/advanced/strain-imaging.md
+          - Stress Echo: study-guide/advanced/stress-echo.md
