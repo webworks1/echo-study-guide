@@ -3,10 +3,17 @@ name: deploy-mkdocs
 on:
   push:
     branches:
-      - main  # Deploy whenever changes are pushed to main
+      - main  # Run this every time you push to main
+  workflow_dispatch:  # Allow manual trigger from the Actions tab
 
 permissions:
-  contents: write  # Needed to push to gh-pages branch
+  contents: write  # Needed to push site to Pages
+  pages: write      # Required for GitHub Pages deploy
+  id-token: write   # Needed for OIDC authentication
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -21,18 +28,18 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install MkDocs and dependencies
+      - name: Install MkDocs and Material theme
         run: |
-          pip install mkdocs mkdocs-material
+          pip install mkdocs-material
 
-      - name: Build site
+      - name: Build the MkDocs site
         run: |
+          echo "🔧 Cleaning old build..."
+          rm -rf site
+          echo "🏗️ Building MkDocs site..."
           mkdocs build --clean --verbose
 
-      - name: Deploy to GitHub Pages
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy MkDocs site to GitHub Pages
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mkdocs gh-deploy --force --clean --remote-name origin --remote-branch gh-pages
+          echo "🚀 Deploying site to GitHub Pages..."
+          mkdocs gh-deploy --force --clean --message "Deploy $(date)"
