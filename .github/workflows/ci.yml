@@ -6,7 +6,7 @@ on:
       - main  # Deploy whenever changes are pushed to main
 
 permissions:
-  contents: write  # Needed to push to gh-pages
+  contents: write  # Needed to push to gh-pages branch
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
 
       - name: Install MkDocs and dependencies
         run: |
-          pip install mkdocs-material
+          pip install mkdocs mkdocs-material
 
       - name: Build site
         run: |
