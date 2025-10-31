@@ -3,13 +3,13 @@ name: deploy-mkdocs
 on:
   push:
     branches:
-      - main  # Run this every time you push to main
-  workflow_dispatch:  # Allow manual trigger from the Actions tab
+      - main
+  workflow_dispatch:
 
 permissions:
-  contents: write  # Needed to push site to Pages
-  pages: write      # Required for GitHub Pages deploy
-  id-token: write   # Needed for OIDC authentication
+  contents: read        # Only need to read source
+  pages: write          # Required for artifact deploy
+  id-token: write       # Required for OIDC
 
 concurrency:
   group: "pages"
@@ -18,7 +18,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -34,12 +33,25 @@ jobs:
 
       - name: Build the MkDocs site
         run: |
-          echo "🔧 Cleaning old build..."
+          echo "Cleaning old build..."
           rm -rf site
-          echo "🏗️ Building MkDocs site..."
+          echo "Building MkDocs site..."
           mkdocs build --clean --verbose
 
-      - name: Deploy MkDocs site to GitHub Pages
-        run: |
-          echo "🚀 Deploying site to GitHub Pages..."
-          mkdocs gh-deploy --force --clean --message "Deploy $(date)"
+      # REPLACE gh-deploy WITH THIS:
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+  # ADD THIS NEW JOB:
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
