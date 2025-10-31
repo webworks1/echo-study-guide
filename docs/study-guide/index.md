@@ -1,4 +1,4 @@
-# Echo Study Guides
+# Echo Study Guide
 
 Welcome to the comprehensive ARDMS Adult Echocardiography Study Guide.
 
