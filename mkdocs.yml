@@ -42,7 +42,7 @@ plugins:
   - search
 
 nav:
-  - Home: study-guide/index.md
+  - Home: index.md
   - Study Guide:
       - Beginner:
           - Overview: study-guide/beginner/index.md
