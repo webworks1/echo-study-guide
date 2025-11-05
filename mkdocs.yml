@@ -44,6 +44,7 @@ plugins:
 nav:
   - Home: index.md
   - Study Guide:
+      - Section 1: Normal Anatomy, Physiology & Views: study-guide/section1-anatomy.md
       - Beginner:
           - Overview: study-guide/beginner/index.md
           - Normal Values: study-guide/beginner/normal-values.md
