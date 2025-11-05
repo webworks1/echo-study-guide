@@ -1,5 +1,5 @@
 site_name: Echo Study Guide
-site_description: "Comprehensive ARDMS Adult Echocardiography Study Guide with Normal Values, Doppler, and Pathology sections"
+site_description: "Comprehensive ARDMS Adult Echocardiography Study Guide with Normal Values, Doppler, and Pathology sections."
 site_author: "webworks1"
 site_url: https://webworks1.github.io/echo-study-guide/
 use_directory_urls: true
@@ -44,10 +44,10 @@ plugins:
 nav:
   - Home: index.md
   - Study Guide:
-      - Section 1: Normal Anatomy, Physiology & Views: study-guide/section1-anatomy.md
-      - Section 2: LV Systolic & Diastolic Function: study-guide/section2-lv-function.md
-      - Section 3: Right Heart & Pulmonary Hemodynamics: study-guide/section3-right-heart.md
-      - Section 4: Valvular Heart Disease: study-guide/section4-valvular.md
-      - Section 5: Congenital & Miscellaneous Pathology: study-guide/section5-congenital.md
-      - Section 6: Doppler & Quantitative Calculations: study-guide/section6-doppler.md
-      - Section 7: Final Review & Exam Simulation: study-guide/section7-review.md
+      - Section 1: Anatomy, Physiology & Views: study-guide/section1-anatomy.md
+      - Section 2: LV Systolic Function & Strain: study-guide/section2-lv-function.md
+      - Section 3: Valvular Assessment: study-guide/section3-valvular.md
+      - Section 4: Right Heart Evaluation: study-guide/section4-right-heart.md
+      - Section 5: Doppler & Hemodynamics: study-guide/section5-doppler-hemo.md
+      - Section 6: Advanced Imaging (3D, Contrast, Strain): study-guide/section6-advance-imaging.md
+      - Section 7: Reporting & Standards: study-guide/section7-reporting-standards.md
