@@ -45,17 +45,9 @@ nav:
   - Home: index.md
   - Study Guide:
       - Section 1: Normal Anatomy, Physiology & Views: study-guide/section1-anatomy.md
-      - Beginner:
-          - Overview: study-guide/beginner/index.md
-          - Normal Values: study-guide/beginner/normal-values.md
-          - Doppler: study-guide/beginner/doppler.md
-          - Pathologies: study-guide/beginner/pathologies.md
-      - Intermediate:
-          - Overview: study-guide/intermediate/index.md
-          - Advanced Doppler: study-guide/intermediate/advanced-doppler.md
-          - Pathology Cases: study-guide/intermediate/pathology-cases.md
-          - Formulas: study-guide/intermediate/formulas.md
-      - Advanced:
-          - Overview: study-guide/advanced/index.md
-          - Strain Imaging: study-guide/advanced/strain-imaging.md
-          - Stress Echo: study-guide/advanced/stress-echo.md
+      - Section 2: LV Systolic & Diastolic Function: study-guide/section2-lv-function.md
+      - Section 3: Right Heart & Pulmonary Hemodynamics: study-guide/section3-right-heart.md
+      - Section 4: Valvular Heart Disease: study-guide/section4-valvular.md
+      - Section 5: Congenital & Miscellaneous Pathology: study-guide/section5-congenital.md
+      - Section 6: Doppler & Quantitative Calculations: study-guide/section6-doppler.md
+      - Section 7: Final Review & Exam Simulation: study-guide/section7-review.md
