@@ -44,10 +44,8 @@ plugins:
 nav:
   - Home: index.md
   - Study Guide:
-      - Section 1: Anatomy, Physiology & Views: study-guide/section1-anatomy.md
-      - Section 2: LV Systolic Function & Strain: study-guide/section2-lv-function.md
-      - Section 3: Valvular Assessment: study-guide/section3-valvular.md
-      - Section 4: Right Heart Evaluation: study-guide/section4-right-heart.md
-      - Section 5: Doppler & Hemodynamics: study-guide/section5-doppler-hemo.md
-      - Section 6: Advanced Imaging (3D, Contrast, Strain): study-guide/section6-advance-imaging.md
-      - Section 7: Reporting & Standards: study-guide/section7-reporting-standards.md
+      - Section 1 - Anatomy, Physiology & Views: study-guide/section1-anatomy.md
+      - Section 2 - LV Function & Hemodynamics: study-guide/section2-lv-function.md
+      - Section 3 - Valvular Assessment: study-guide/section3-valvular.md
+      - Section 4 - Right Heart & Pulmonary: study-guide/section4-right-heart.md
+      - Section 5 - Subcostal & Suprasternal Views: study-guide/section5-subcostal.md
