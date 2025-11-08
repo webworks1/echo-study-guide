@@ -44,8 +44,11 @@ plugins:
 nav:
   - Home: index.md
   - Study Guide:
-      - Section 1 - Anatomy, Physiology & Views: study-guide/section1-anatomy.md
-      - Section 2 - LV Function & Hemodynamics: study-guide/section2-lv-function.md
-      - Section 3 - Valvular Assessment: study-guide/section3-valvular.md
-      - Section 4 - Right Heart & Pulmonary: study-guide/section4-right-heart.md
-      - Section 5 - Subcostal & Suprasternal Views: study-guide/section5-subcostal.md
+      - Section 1 – Anatomy & Views: study-guide/section1-anatomy.md
+      - Section 2 – LV Function: study-guide/section2-lv-function.md
+      - Section 3 – Valvular Disease: study-guide/section3-valves.md
+      - Section 4 – Hemodynamics & Doppler: study-guide/section4-hemodynamics.md
+      - Section 5 – Pathologies: study-guide/section5-pathologies.md
+      - Section 6 – Strain & Stress Echo: study-guide/section6-strain-stress.md
+      - Section 7 – Normal Values: study-guide/section7-normal-values.md
+
